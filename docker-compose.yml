@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+    kue:
+      # image: ${REGISTRY_BASE_URL}/kue:0.0.1
+      image: 'valentinvieriu/booksclub:kue-1.0.0'
+      build: .
+      restart: always
+      environment:
+        PORT: 9000
+        REDIS_URL: ${REDIS_URL}
+      # ports: 
+      #   - "9000:9000"
