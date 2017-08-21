@@ -1,8 +1,7 @@
 version: "2.2"
 services:
     kue:
-      # image: ${REGISTRY_BASE_URL}/kue:0.0.1
-      image: 'valentinvieriu/booksclub:kue-1.0.0'
+      image: 'valentinvieriu/booksclub:kue-1.0.1'
       build: .
       restart: always
       environment:

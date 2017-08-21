@@ -1,4 +1,4 @@
-FROM node:8.3.0-alpine
+FROM node:8.4.0-alpine
 WORKDIR /usr/src/app
 ADD package-lock.json package-lock.json
 ADD package.json package.json
